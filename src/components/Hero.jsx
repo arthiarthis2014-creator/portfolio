@@ -3,13 +3,17 @@ import resume from '../assets/resume.pdf';
 import {FaGithub, FaLinkedin} from 'react-icons/fa';
 function Hero(){
     return(
-        <section className='hero'>
+        <section className='hero' id='home'>
             <div className='hero-text'>
                 <h1>Hello, I'm Aarthi</h1>
-                <h2>Frotend Developer</h2>
-                <p>Learning React and Building projects</p>
+                <h2>Frotend Developer|MERN Stack Developer</h2>
+                <p>I Build responsive and user friendly web applications using React,JavaScript
+
+                </p>
                 <div className='hero-buttons'>
+                    <a href='#projects'>
                     <button>View Projects</button>
+                    </a>
                     <a href={resume} download>
                         <button>Download Resume</button>
                     </a>
@@ -23,7 +27,9 @@ function Hero(){
                     </div>
                 </div>
             </div>
+            <div className='hero-image'>
             <img src={profile} alt="profile" />
+            </div>
         </section>
     )
 }

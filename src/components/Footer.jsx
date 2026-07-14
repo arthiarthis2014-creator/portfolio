@@ -1,8 +1,8 @@
 function Footer() {
     return (
-        <footer>
+        <footer className="footer">
             <p>
-                @ 2026 Arthi Portfolio
+                @ 2026 Arthi Portfolio, Built with React
             </p>
         </footer>
     );

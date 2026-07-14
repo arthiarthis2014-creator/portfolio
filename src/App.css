@@ -11,160 +11,36 @@ body{
 section{
   padding-top: 80px;
 }
-nav{
-  background-color:black;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.navbar{
+ position: sticky;
+ top: 0;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 20px 80px;
+ background: #0f172a;
+ z-index: 1000;
 }
-nav ul{
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-nav a{
+.logo{
   color: whitesmoke;
-  text-decoration: none;
-}
-nav a:hover{
-  color: cyan;
-}
-h1,h2{
-  color:whitesmoke
-}
-html{
-  scroll-behavior: smooth;
-}
-
-.hero{
-  display:flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 80px;
-
-}
-.hero img{
-  width: 250px;
-  border-radius: 50%;
-  box-shadow: 0px 0px 20px cyan;
-  transition: 0.3s;
-}
-.hero img:hover{
-  transform: scale(1.05);
-}
-.hero-text h2{
-  color:cyan;
-  max-width: 500px;
-}
-button{
-  padding: 12px 20px;
-  margin-top: 20px;
-  margin-right: 10px;
-  transition: 0.3s;
-  background-color: #222;
-  color: whitesmoke;
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
+  font-size: 28px;
   font-weight: bold;
 }
-button:hover
-{
-  background-color: cyan;
-  transform:scale(1.05);
-  color:black;
-}
-.about{
-  padding: 80px;
-}
-.about p{
-  margin-top: 15px;
-  line-height: 30px;
-  padding: 0;
-}
-.skills{
-  padding: 80px;
-  text-align: center;
-}
-.skill-box{
+.nav-links{
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 20px;
-  flex-wrap: wrap;
-}
-.skill-box span{
-  background-color:#222;
-  padding: 10px 20px;
-  border-radius: 10px;
-}
-.projects{
-  padding: 80px;
-  text-align: center;
-}
-.project-container{
-  display: flex;
-  justify-content: center;
+  list-style: none;
   gap: 30px;
-  margin-top: 30px;
-  flex-wrap: wrap;
 }
-.project-card{
-  background-color: #222;
-  padding: 20px;
-  width: 100%;
-  max-width: 300px;
-  border-radius: 10px;
+.nav-links a{
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 18px;
   transition: 0.3s;
 }
-.project-card:hover{
-  transform: translateY(-10px);
-  background:#333;
+.nav-links a:hover{
+  color: cyan;
 }
-.project-card img{
-  width: 100%;
-  height: 150px;
-  object-fit: contain;
-  border-radius: 10px;
-}
-.contact{
-  padding: 80px;
-  text-align: center;
-}
-.contact p{
-  margin-top: 15px;
-  padding:0;
-}
-form{
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 400px;
-  margin:  auto;
-  margin-top: 30px;
-  text-align: left;
-  width: 90%;
-}
-input, textarea{
-  padding: 15px;
-  border: none;
-  border-radius: 10px;
-  background-color: #222;
-  color: whitesmoke;
-}
-input:focus, textarea:focus{
-  outline: none;
-  box-shadow: 0px 0px 10px cyan;
-}
-input::placeholder, textarea::placeholder{
-  color: #666;
-}
-textarea{
-  resize: none;
-  height: 100px;
-}
+
 .social-icons{
   display: flex;
   gap: 20px;
@@ -179,10 +55,213 @@ textarea{
   color: cyan;
   transform: scale(1.2);
 }
-footer{
-  background-color: black;
+h1,h2{
+  color:whitesmoke
+}
+html{
+  scroll-behavior: smooth;
+}
+
+.hero{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
+  min-height: 100vh;
+  background: #0f172a;
+  color: whitesmoke
+
+}
+.hero-text{
+  flex: 1;
+}
+.hero-image{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.hero-image img{
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  border:5px solid cyan
+}
+.hero img:hover{
+  transform: scale(1.05);
+}
+.hero-text h1{
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+.hero-text h2{
+  color:cyan;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.hero-content p{
+  font-size:18px;
+  line-height: 1.8;
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+.hero-buttons{
+ display: flex;
+ gap: 20px;
+}
+.hero-buttons button{
+  margin-top: 14px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+button:hover
+{
+  background-color: cyan;
+  transform:scale(1.05);
+  color:black;
+}
+.about{
+  padding: 80px 20px;
+  text-align: center;
+  background: #0f172a;
+}
+.about p{
+  margin: 15px auto;
+  max-width: 700px;
+  line-height: 1.8;
+
+}
+
+.skills{
+  padding: 80px 20px;
+  text-align: center;
+   background: #0f172a;
+
+}
+.skill-box{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+.skill-card{
+background: #1e293b;
+color: whitesmoke;
+padding: 20px;
+width:140px;
+border-radius: 10px;
+font-weight: bold;
+transition: 0.3s;
+cursor: pointer;
+}
+.skill-card svg{
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.skill-card:hover{
+transform: translateY(-5px);
+background: #354c7e;
+}
+
+.projects{
+  padding: 80px 20px;
+  text-align: center;
+   background: #0f172a;
+
+}
+.project-container{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+.project-card{
+  background:#1e293b;
+  color: whitesmoke;
+  padding: 20px;
+  width: 320px;
+  max-width: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.project-card:hover{
+  transform: translateY(-8px);
+}
+.project-card img{
+
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.project-card h3{
+  margin-top: 15px;
+}
+.project-card p{
+  margin: 15px 0;
+}
+.project-buttons{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+.project-buttons button{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.project-buttons a{
+  text-decoration: none;
+}
+.contact{
+  padding: 80px 20px;
+  text-align: center;
+   background: #0f172a;
+
+}
+.contact-container{
+  display: flex;
+  justify-content: center;
+  gap:40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.contact-info{
+  text-align: left;
+  width:300px
+}
+.contact-info p{
+  margin: 15px 0;
+
+}
+.contact-form {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact-form input,.contact-form textarea{
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.contact button{
+  padding: 5px 5px;
+}
+
+.footer{
+   background: #0f172a;
   text-align: center;
   padding: 20px;
+  color: whitesmoke;
 }
 @media (max-width: 768px){
   .hero{
